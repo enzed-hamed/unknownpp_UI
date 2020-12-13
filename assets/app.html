@@ -1,13 +1,91 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>MyApp -- (edit this title in app.html)</title>
-    <style>
-    body {
-      font-family: -apple-system, 'Segoe UI Light', Ubuntu, Arial, sans-serif;
-    }
-    </style>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+	<head>
+
+		<title>
+			resume
+		</title>
+		<style>
+
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			padding: 0 20px 0 20px;
+			margin: 0 0 0 0;
+			height: 100%;
+			background-image: url("pics/graphic.jpg");
+		}
+		html {
+			height: 100%;
+		}
+		#wrapper, textarea {
+			margin: 0 auto 0 auto;
+			max-width: 900px;
+			min-width: 600px;
+			height: 100%;
+			background-color: #1f1f2e;
+			opacity: 0.9;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-content: stretch;
+
+			/*padding: 40px;*/
+
+		}
+
+		p, h2, h3 {
+			color: #ffffff;
+			font-size: 18px;
+		}
+
+		textarea {
+			width : 100%;
+			height : 100%;
+			font-size: 20px;
+			color: white;
+
+		}
+
+		#option {
+			margin : 0 0 0 0;
+			height : 100%;
+			width : 100px;
+			/*background-color: #6469d0;*/
+			float: left;
+			display: flex;
+			/*align-content: stretch;*/
+			justify-content: space-around;
+			flex-flow: column;
+		}
+
+
+		.buttons {
+			width: 100%;
+		}
+
+
+	</style>
+	</head>
+	<body>
+
+		<div id="option">
+			<input type="image" class="buttons" src="images/run1.png" name="Run" id="run"/>
+			<input id="fileInput_open" type="file" style="display:none;" />
+			<input type="image" class="buttons" src="images/open1.png" name="Open" id="open" onclick="document.getElementById('fileInput_save').click();"/>
+			<input id="fileInput_save" type="file" style="display:none;" />
+			<input type="image" class="buttons" src="images/save.png" name="Save" id="save" onclick="document.getElementById('fileInput_open').click();"/>
+		</div>
+
+
+		<div id="wrapper" >
+
+			<textarea>
+
+
+			</textarea>
+
+		</div>
+	</body>
 </html>
